@@ -9,11 +9,11 @@ const io = require('socket.io')(server, {
   },
 });
 
-let corsOptions = {
-  origin: ['http://localhost:3000'],
-};
+// let corsOptions = {
+//   origin: ['http://localhost:3000'],
+// };
 
-app.use(cors(corsOptions));
+app.use(cors());
 
 // app.use((req, res, next) => {
 //   res.setHeader('Access-Control-Allow-Origin', '*');
